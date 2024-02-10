@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram Photo Feed with Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/63ec4f579b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <!-- navbar -->
+
+            <nav class="navbar navbar-expand-lg bg-light ">
+                <div class="container-fluid mx-auto" style="width: 60%;">
+                    <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+                    <!-- Button modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Create a new post
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Caption</h5>
+          <div class="input-group">
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <button class="btn border border-1 mt-2"><i class="fa-solid fa-camera"></i></button>
+          <button class="btn border border-1 mt-2"><i class="fa-solid fa-location-dot"></i></button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                     &nbsp;
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                         aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Profile</a></li>
+                           <li><a class="dropdown-item" href="#">Accessability</a></li>
+                           <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                           <li>
+                            <hr class="dropdown-divider">
+                           </li>
+                           <li><a class="dropdown-item text-danger" id="log-out" href="#">Log Out</a></li>
+                        </ul>
+                   </div>
+                </div>
+            </nav>
+     <!-- swith -->
+        <div class="m-3 d-grid gap-2 d-md-block text-center">
+          <button class="btn border-0"><i class="fa-solid fa-table-cells"></i></button>
+          <button class="btn border-0"><i class="fa-regular fa-square"></i></button> 
+        </div>
+        <!-- Grid three images per row -->
+        <div class="container-fluid d-grid" style="width:60%">
+          <div class="row">
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/vista-anterior-arreglo-especias-indias_23-2148747645.jpg?w=1380&t=st=1707515759~exp=1707516359~hmac=6bd3d6b1f5f2144ad615877fe4eeff5b14abef8c5063b67ed7b4d2e396b422e4" style="width: 100%;" class="mb-2"></div>
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/tiro-medio-mujer-auriculares_23-2149818230.jpg?w=1380&t=st=1707515550~exp=1707516150~hmac=1d898ab065357177dedbade3e5bcfe685bd0b3a5bbf2cdf0c2d1e7e730a34f29" style="width: 100%;" class="mb-2"></div>
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/asombrosas-hormigas-cargan-frutos-mas-pesados-que-sus-cuerpos-asombrosas-hormigas-fuertes_488145-2669.jpg?w=1380&t=st=1707522835~exp=1707523435~hmac=8074338d4ac781bc1a3a41266c872c5888069279d768c2704d7e102ae81ee671" style="width: 100%;" class="mb-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/hermosa-mujer-independiente-rizada-linda-manicura-usando-laptop-sonriendo-retrato-interior-secretaria-rubia-sentada-junto-companero-trabajo-africano-camisa-azul_197531-3713.jpg?w=1380&t=st=1707516313~exp=1707516913~hmac=fce38db50592fec62ba19a33cab5511fff89036bb48e373349b6975e932bc867" style="width: 100%;" class="mb-2"></div>
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/estrellas-mar-verano-playa-soleada-fondo-oceano-viajes-conceptos-vacaciones_1423-276.jpg?w=1380&t=st=1707516046~exp=1707516646~hmac=50b0178df35859b1c1c95fb6f18013aa885c3b251ff221ed521a6e2e856cd8f6" style="width: 100%;" class="mb-2"></div>
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/perro-jack-russell-surfeando-oladia-soleado-concepto-verano-ai-generativo_123827-23887.jpg?w=1380&t=st=1707516081~exp=1707516681~hmac=9f93f267137acf278bebc383acfe0fb87607a25a1c5b595cfd3ac018ef35d2d0" style="width: 100%;" class="mb-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?w=1380&t=st=1707516177~exp=1707516777~hmac=91b6ee45c22e55cc0da8e5134db7876ccaba4111d7097c9dc64664f7a1d63483" style="width: 100%;" class="mb-2"></div>
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/mapache-parque-montreal-canada_649448-4368.jpg?w=1380&t=st=1707522211~exp=1707522811~hmac=370470754f079412e57c4ce21a6205700a8109b4f74d6d0c3048ade9f28bb025"style="width: 100%;" class="mb-2"></div>
+            <div class="col-4"><img src="https://img.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg?w=1380&t=st=1707516281~exp=1707516881~hmac=e7797ca42672a0f000379269bf0e4af93ae0ec98effc9beb1bffff775d8d2d21" style="width: 100%;" class="mb-2"></div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <!-- Grid one image per row -->
+
+    <div class="container mt-3" style="width: 50%;">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  Featured
+                </div>
+                <img src="https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?w=1380&t=st=1707516177~exp=1707516777~hmac=91b6ee45c22e55cc0da8e5134db7876ccaba4111d7097c9dc64664f7a1d63483" class="card-img" alt="...">
+                  <div class="card-body">
+                      
+                      <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  Featured
+                </div>
+                <img src="https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?w=1380&t=st=1707516177~exp=1707516777~hmac=91b6ee45c22e55cc0da8e5134db7876ccaba4111d7097c9dc64664f7a1d63483" class="card-img" alt="...">
+                  <div class="card-body">
+                      
+                      <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+                  </div>
+              </div>
+
+              
+          </div>
+      </div>
+  </div>
+
+
+
+    <div class="row justify-content-center"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      
+      
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
